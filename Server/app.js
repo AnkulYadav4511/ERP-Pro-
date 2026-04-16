@@ -483,7 +483,11 @@ app.use(cors());
 app.use(express.json({ limit: '50mb' }));
 
 //  1. MongoDB Connection
-mongoose.connect('mongodb+srv://bharatsharma:India%406427@users.zhyvuoo.mongodb.net/tracking?retryWrites=true&w=majority')
+// mongoose.connect('mongodb+srv://bharatsharma:India%406427@users.zhyvuoo.mongodb.net/tracking?retryWrites=true&w=majority')
+//     .then(() => console.log("✅ Connected to MongoDB"))
+//     .catch((err) => console.error("❌ MongoDB connection error:", err));
+
+mongoose.connect('mongodb+srv://netrutv:Netrutv39@basic.mtdr6.mongodb.net/tracking?retryWrites=true&w=majority')
     .then(() => console.log("✅ Connected to MongoDB"))
     .catch((err) => console.error("❌ MongoDB connection error:", err));
 
